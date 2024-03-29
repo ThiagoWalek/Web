@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 300px;
+    }
+    th, td {
+        border: 1px solid black;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="4" scope="colgroup">Cabeçalho</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Menu esquerda</td>
+            <td>Conteúdo Superior</td>
+            <td rowspan="2">Menu esquerda</td>
+        </tr>
+        <tr>
+            <td>Conteúdo Inferior</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="4">Rodapé</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
