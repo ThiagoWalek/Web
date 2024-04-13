@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --cor1:rgba(165, 165, 165, 0.449);
+    --cor2:rgba(80, 80, 80, 0.541);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+a.especial {
+    text-decoration: underline;
+    color: blue;
+}
+header {
+    padding: 30px;
+    background-color: var(--cor1);
+    position: sticky;
+    top: 0;
+}
+div.principal {
+    margin: 80px auto 0px auto;
+    width: 100%;
+    overflow-x: auto;
+    max-width: 1000px;
+}
+div.grupo-img {
+    margin: auto;
+    width: 20vw;
+}
+header > nav > a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    padding: 10px;
+    background-color: var(--cor2);
+    transition-duration: 0.8s;
+}
+header > nav > a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    margin: 48px 0px;
+    width: 1000px;
+}
+td,th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+th {
+    background-color: #6a5acd;
+    color: white;
+}
+h1.bg,h2.bg {
+    color: #8b0000;
+}
+
+
+img.grande {
+    width: 100%;
+}
+img.zoada {
+    width: 14vw;
+    transition-duration: 5s;
+    position: fixed;
+}
+img.rodape {
+    width: 98vw;
+    height: 130px;
+}
+img.img-grupo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 250px;
+    transition-duration: 0.5s;
+}
+img.img-grupo:hover {
+    width: 280px;
+    cursor: pointer;
+    transform: translateX(15%);
+}
+img.zoada:hover {
+    transform: translateX(1000%);
+}
+body#zoado {
+    height: 2000px;
+}
+
+.container-fluid{
+    background-color: #001132;
+    color: #83cbeb;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: "Honk";
+    font-size: 2vw;
+    box-shadow: 1px 9px 20px 7px black;
+}
+
+div.estagio {
+    width: 100%;
+    background-color: #001132;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 1px 13px 29px 7px black;
+}
+div.estagio > h1 {
+    color: #83cbeb;
+}
+div.estagio > h2 {
+    color: white;
+    text-decoration: underline;
+    font-size: 1em;
+}
+div.estagio > p {
+    color: #a2a8b4;
+}
+div.estagio > strong {
+    color: #ffffff;
+    background-color: #ff0000;
+    padding: 4px;
+}
+
+div.div-form {
+    height: 50vh;
+    margin: auto;
+    background-color: #001132;
+    text-align: center;
+    padding: 100px;
+    color: #83cbeb;
+    font-size: 1.8vh;
+    width: 30vw;
+}
+.input-adap {
+    width: 20vw;
+    height: 3vh;
+    margin: 8px 0px;
+}

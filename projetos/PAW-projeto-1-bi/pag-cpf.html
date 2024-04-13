@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+        <nav>
+            <a href="principal1.html">Inicio</a>
+            <a href="#">1°Anos</a>
+            <a href="2ano.html">2°Anos</a>
+            <a href="3ano.html">3°Anos</a>
+            <input type="radio" name="esc" id="claro" onclick="claro()" checked>Claro
+            <input type="radio" name="esc" id="escuro" onclick="escuro()">Escuro
+        </nav>
+    </header>
+	<div class="principal">
+		<div class="div-form">
+			<form action="./cpf.php" method="post">
+				<h3>Digite seu cpf abaixo para saber se é valido ou nao</h3>
+				<input class="input-adap" type="text" name="cpf" placeholder="00000000000">
+				<br>
+				<input class="input-adap" type="submit" value="Enviar">
+			</form>
+			<br>
+			<form action="./bubbleSort.php" method="get">
+				<h3>Digite uma ordem de números para ser organizada em ordem crescente</h3>
+				<input class="input-adap" type="text" name="numeros" placeholder="0,0,0,0,0">
+				<br>
+				<input class="input-adap" type="submit" value="Enviar">
+			</form>
+			<form action="./testes.php" method="get">
+				<h3>Digite um número para ser testado</h3>
+				<input class="input-adap" type="text" name="n" placeholder="0">
+				<br>
+				<input class="input-adap" type="submit" value="Enviar">
+			</form>
+		</div>
+	</div>
+	<script src="modo-visualizacao.js"></script>
+</body>
+</html>

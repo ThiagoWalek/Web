@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radio Button Persistente</title>
+<script>
+    function claro() {
+        localStorage.setItem('escolha', 'claro');
+        document.body.classList.remove('escuro');
+    }
+
+    function escuro() {
+        localStorage.setItem('escolha', 'escuro');
+        document.body.classList.add('escuro');
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const escolha = localStorage.getItem('escolha');
+        if (escolha === 'claro') {
+            document.getElementById('claro').checked = true;
+            document.body.classList.remove('escuro');
+        } else if (escolha === 'escuro') {
+            document.getElementById('escuro').checked = true;
+            document.body.classList.add('escuro');
+        }
+    });
+</script>
+<style>
+    .escuro {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+</head>
+<body>
+    <input type="radio" name="esc" id="claro" onclick="claro()" checked>Claro
+    <input type="radio" name="esc" id="escuro" onclick="escuro()">Escuro
+</body>
+</html>
