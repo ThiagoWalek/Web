@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div#inputs {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 300px;
+    height: 300px;
+    margin: 18vh auto;
+    padding: 30px;
+    background-color: darkgreen;
+}
+
+div#inputs > p, input, a {
+    font-size: 1.7em;
+}
+
+a {
+    margin: 70px 0px 0px 0px;
+    background-color: greenyellow;
+    box-shadow: 5px 5px 9px 0px black;
+    transition-duration: 0.3s;
+    text-align: center;
+    font-weight: bolder;
+}
+
+a:hover {
+    background-color: black;
+    color: greenyellow;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1:hover {
+    transform: rotateZ(10deg);
+}
+
+header {
+    padding: 20px 0px 20px 20px;
+    background-color: rgb(77, 176, 77);
+    font-size: 1.7em;
+}
+
+section#manuseio {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 500px;
+    margin: 18vh auto 0px auto;
+}
+
+section#manuseio > div {
+    background-color: rgb(166, 255, 166);
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 1.7em;
+    margin-bottom: 30px;
+}
+
+section#manuseio > div:hover {
+    background-color: black;
+    border: 2px solid rgb(43, 255, 0);
+    color: rgb(166, 255, 166);
+}

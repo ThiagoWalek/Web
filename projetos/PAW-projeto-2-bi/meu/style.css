@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#principal {
+    width: 40vw;
+    height: 65vh;
+    background-color: rgb(222, 255, 172);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.37);
+    margin: auto;
+    margin-top: 18vh;
+    padding: 25px;
+    
+}
+
+.inputs {
+    width: 80%;
+    height: 60%;
+    padding: 5px;
+    margin: auto;
+    display: block;
+}
+
+.input-campo {
+    background-color: gray;
+    padding: 5px;
+    text-align: center;
+}
+
+.input-campo > span {
+    padding: 2px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+input {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 1.3em;
+}
+
+p {
+    margin: 10px 0px;
+    font-size: 1.5em;
+    text-align: center;
+}
