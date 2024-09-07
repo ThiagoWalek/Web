@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
+    background-color: #2F4F4F;
 }
 
 div#inputs {
@@ -16,7 +17,7 @@ div#inputs {
     height: 300px;
     margin: 18vh auto;
     padding: 30px;
-    background-color: darkgreen;
+    background-color: #4CAF50; /* Verde vibrante */
 }
 
 div#inputs > p, input, a {
@@ -25,30 +26,24 @@ div#inputs > p, input, a {
 
 a {
     margin: 70px 0px 0px 0px;
-    background-color: greenyellow;
-    box-shadow: 5px 5px 9px 0px black;
+    background-color: #F0C808; /* Amarelo ouro */
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
     transition-duration: 0.3s;
     text-align: center;
     font-weight: bolder;
+    text-decoration: none;
+    color: white;
 }
 
 a:hover {
-    background-color: black;
-    color: greenyellow;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-h1:hover {
-    transform: rotateZ(10deg);
+    background-color: #E5A200; /* Amarelo mais escuro no hover */
+    transform: scale(1.05); /* Leve aumento de tamanho no hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 header {
     padding: 20px 0px 20px 20px;
-    background-color: rgb(77, 176, 77);
+    background-color: #007BFF; /* Azul claro para o cabeçalho */
     font-size: 1.7em;
 }
 
@@ -61,7 +56,7 @@ section#manuseio {
 }
 
 section#manuseio > div {
-    background-color: rgb(166, 255, 166);
+    background-color: #FF5722; /* Laranja vibrante para destaque */
     border: 2px solid black;
     padding: 10px;
     font-size: 1.7em;
@@ -70,6 +65,31 @@ section#manuseio > div {
 
 section#manuseio > div:hover {
     background-color: black;
-    border: 2px solid rgb(43, 255, 0);
-    color: rgb(166, 255, 166);
+    border: 2px solid #007BFF; /* Azul para o contorno no hover */
+    color: #F0C808; /* Amarelo ouro no texto ao hover */
+}
+
+input {
+    border: 3px solid #C0C0C0; /* Bordas cinza claro nas caixas de texto */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #5D3FD3;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+                 0 0 20px rgba(255, 255, 255, 0.6),
+                 0 0 30px rgba(255, 255, 255, 0.4);
+    transition-duration: 0.6s;
+    background-color: transparent;
+}
+
+h1:hover {
+    transform: rotateZ(10deg);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1),
+    0 0 25px rgba(255, 255, 255, 0.8),
+    0 0 35px rgba(255, 255, 255, 0.6);
+transform: scale(1.05);
+transition: 0.3s ease-in-out;
+cursor: pointer;
 }
