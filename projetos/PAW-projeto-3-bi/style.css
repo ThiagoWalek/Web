@@ -17,15 +17,29 @@ div#inputs {
     height: 300px;
     margin: 18vh auto;
     padding: 30px;
-    background-color: #4CAF50; /* Verde vibrante */
+    background-color: #4CAF50;
 }
 
 div#inputs > p, input, a {
     font-size: 1.7em;
 }
 
-a#conta {
-    margin: 70px 0px 0px 0px;
+div#cria > p, input, a {
+    font-size: 1.7em;
+}
+
+div#criar {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 300px;
+    height: 360px;
+    margin: 18vh auto;
+    padding: 30px;
+    background-color: #4CAF50;
+}
+
+a#conta, a#cria {
+    margin: 50px 0px 0px 0px;
     background-color: #F0C808;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
     transition-duration: 0.3s;
@@ -35,20 +49,18 @@ a#conta {
     color: white;
 }
 
+
 a {
     text-decoration: none;
     color: black;
 }
 
-a#conta:hover {
+a#conta:hover, a#cria:hover {
     background-color: #E5A200; /* Amarelo mais escuro no hover */
     transform: scale(1.05); /* Leve aumento de tamanho no hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
-a#ler {
-
-}
 
 header {
     padding: 20px 0px 20px 20px;
