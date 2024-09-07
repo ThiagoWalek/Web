@@ -24,9 +24,9 @@ div#inputs > p, input, a {
     font-size: 1.7em;
 }
 
-a {
+a#conta {
     margin: 70px 0px 0px 0px;
-    background-color: #F0C808; /* Amarelo ouro */
+    background-color: #F0C808;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
     transition-duration: 0.3s;
     text-align: center;
@@ -35,10 +35,19 @@ a {
     color: white;
 }
 
-a:hover {
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a#conta:hover {
     background-color: #E5A200; /* Amarelo mais escuro no hover */
     transform: scale(1.05); /* Leve aumento de tamanho no hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+a#ler {
+
 }
 
 header {
@@ -55,22 +64,24 @@ section#manuseio {
     margin: 18vh auto 0px auto;
 }
 
-section#manuseio > div {
-    background-color: #FF5722; /* Laranja vibrante para destaque */
+section#manuseio > a {
+    background-color: #FF5722;
     border: 2px solid black;
     padding: 10px;
     font-size: 1.7em;
     margin-bottom: 30px;
+    transition-duration: 0.3s;
+    cursor: pointer;
 }
 
-section#manuseio > div:hover {
+section#manuseio > a:hover {
     background-color: black;
-    border: 2px solid #007BFF; /* Azul para o contorno no hover */
-    color: #F0C808; /* Amarelo ouro no texto ao hover */
+    border: 2px solid #007BFF;
+    color: #F0C808;
 }
 
 input {
-    border: 3px solid #C0C0C0; /* Bordas cinza claro nas caixas de texto */
+    border: 3px solid #C0C0C0;
 }
 
 h1 {
@@ -92,4 +103,17 @@ h1:hover {
 transform: scale(1.05);
 transition: 0.3s ease-in-out;
 cursor: pointer;
+}
+
+section#ler {
+    width: 100vw;
+    height: 400px;
+    background-color: white;
+    padding: 10px;
+}
+
+section#ler > p {
+    margin: 0px 0px 20px 0px;
+    font-size: 1.6em;
+    font-weight: bolder;
 }
