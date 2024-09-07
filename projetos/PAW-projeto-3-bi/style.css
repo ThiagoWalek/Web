@@ -24,11 +24,15 @@ div#inputs > p, input, a {
     font-size: 1.7em;
 }
 
-div#cria > p, input, a {
+div#criar > p, input, a {
     font-size: 1.7em;
 }
 
-div#criar {
+div#atualizar > p, input, a {
+    font-size: 1.7em;
+}
+
+div#criar, div#atualizar {
     display: flex;
     flex-flow: column nowrap;
     width: 300px;
@@ -38,7 +42,7 @@ div#criar {
     background-color: #4CAF50;
 }
 
-a#conta, a#cria {
+a#conta, a#cria, a#atualiza {
     margin: 50px 0px 0px 0px;
     background-color: #F0C808;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
@@ -55,7 +59,7 @@ a {
     color: black;
 }
 
-a#conta:hover, a#cria:hover {
+a#conta:hover, a#cria:hover, a#atualiza:hover {
     background-color: #E5A200; /* Amarelo mais escuro no hover */
     transform: scale(1.05); /* Leve aumento de tamanho no hover */
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
