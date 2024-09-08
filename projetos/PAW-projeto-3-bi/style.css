@@ -10,7 +10,7 @@ body {
     background-color: #2F4F4F;
 }
 
-div#inputs {
+div.inputs {
     display: flex;
     flex-flow: column nowrap;
     width: 300px;
@@ -20,19 +20,15 @@ div#inputs {
     background-color: #4CAF50;
 }
 
-div#inputs > p, input, a {
+div.inputs > p, input, a {
     font-size: 1.7em;
 }
 
-div#criar > p, input, a {
+div.container > p, input, a {
     font-size: 1.7em;
 }
 
-div#atualizar > p, input, a {
-    font-size: 1.7em;
-}
-
-div#criar, div#atualizar {
+div.container {
     display: flex;
     flex-flow: column nowrap;
     width: 300px;
@@ -42,7 +38,7 @@ div#criar, div#atualizar {
     background-color: #4CAF50;
 }
 
-a#conta, a#cria, a#atualiza {
+a.enviar, a.del {
     margin: 50px 0px 0px 0px;
     background-color: #F0C808;
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
@@ -53,15 +49,14 @@ a#conta, a#cria, a#atualiza {
     color: white;
 }
 
-
 a {
     text-decoration: none;
     color: black;
 }
 
-a#conta:hover, a#cria:hover, a#atualiza:hover {
-    background-color: #E5A200; /* Amarelo mais escuro no hover */
-    transform: scale(1.05); /* Leve aumento de tamanho no hover */
+a.enviar:hover, a.del:hover {
+    background-color: #E5A200;
+    transform: scale(1.05);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -132,4 +127,31 @@ section#ler > p {
     margin: 0px 0px 20px 0px;
     font-size: 1.6em;
     font-weight: bolder;
+}
+
+a.seta_para_voltar {
+    position: absolute;
+    font-size: 3em;
+    right: 95.65vw;
+    top: -1.14%;
+    transition-duration: 0.5s;
+}
+
+a.seta_para_voltar:hover {
+    box-shadow: 5px 5px 8px 0px;
+    cursor: pointer;
+}
+
+
+a.seta {
+    position: relative;
+    font-size: 3em;
+    right: 1.2%;
+    top: -4.6%;
+    transition-duration: 0.5s;
+}
+
+a.seta:hover {
+    box-shadow: 5px 5px 8px 0px;
+    cursor: pointer;
 }

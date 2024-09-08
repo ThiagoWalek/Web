@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div id="div_dados_usuario">
+
+    </div>
+    <div>
+        <a href="cargos.html">Cargos</a>
+    </div>
+
+    <div>
+        <a href="cargosCSV.html">Enviar CSV Cargos</a>
+    </div>
+    <div>
+        <a href="cargos2.html">Cargos2</a>
+    </div>
+    <div>
+        <a href="funcionarios.html">Funcionairos</a>
+    </div>
+    <script>
+        const dadosUsuario = localStorage.getItem("dados");
+        const objUsuario = JSON.parse(dadosUsuario);
+
+        const div_dados_usuario = document.getElementById("div_dados_usuario");
+
+        div_dados_usuario.appendChild(document.createTextNode(objUsuario.funcionario.nomeFuncionario))
+        div_dados_usuario.appendChild(document.createTextNode(" - " + objUsuario.funcionario.nomeCargo))
+        
+
+
+    </script>
+</body>
+
+</html>
